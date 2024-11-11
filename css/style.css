@@ -1,0 +1,236 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+    
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+.route-selected-div {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    right: 0;
+    width: 577px;
+    height: 115px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.route-selected-texts-element {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+.heading-route {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.route-name {
+    margin-top: 0;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 720px;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 0px -10px 30px 0px rgba(0, 0, 0, 0.30);
+    -webkit-box-shadow: 0px -10px 30px 0px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0px -10px 30px 0px rgba(0, 0, 0, 0.30);
+}
+
+.bottom-item-navbar {
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 55px;
+}
+
+.bottom-item-navbar a {
+    color: #A1A1A1;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 27px;
+    margin-right: 35px;
+}
+
+.bottom-item-navbar a.active {
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.route-list {
+    width: 576px;
+    height: 114px;
+    background-color: #F8F0FB;
+    border: 3px solid #8FE388;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.route-list.active {
+    background-color: #8FE388;
+}
+
+.route-list.unsafe {
+    border-color: #FFBC42;
+}
+
+.route-list.unsafe.active {
+    background-color: #FFBC42;
+}
+
+.route-list-container {
+    margin-left: 60px;
+    margin-top: 25px;
+}
+
+.route-details {
+    margin-top: 5px;
+    display: inline-block;
+    margin-left: 17px;
+}
+
+.route-approx-distance {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.road-status {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 9px;
+}
+
+.route-deadend {
+    color: #828282;
+    font-size: 20px;
+    text-align: center;
+}
+
+.reset-reroute {
+    text-align: center;
+    background-color: #344055;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 5px 15px 5px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Ensure the element is block-level */
+    width: 215px;
+}
+
+.location-div {
+    width: 578px;
+    background-color: #344055;
+    border-radius: 30px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.selected-monitoring-area {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+p.chose-area,
+h1.system-approximate-location {
+    color: #fff;
+}
+
+p.chose-area {
+    margin-bottom: 0;
+}
+
+h1.system-approximate-location {
+    margin-top: 0;
+}
+
+.dashboard {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 538px;
+    margin-left: 0px;
+    margin-top: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+.icon {
+    font-size: 24px;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+.label {
+    flex-grow: 1;
+    font-size: 18px;
+    color: #333;
+}
+.status {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.too-wet, .too-cold {
+    background-color: #FFD54F;
+    color: #333;
+}
+.medium-rain {
+    background-color: #FFD54F;
+    color: #333;
+}
+.safe {
+    background-color: #81C784;
+    color: white;
+}
+
+.bottom-item-navbar a.active {
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
